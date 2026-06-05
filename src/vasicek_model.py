@@ -7,7 +7,7 @@ from scipy.stats import norm
 import yfinance as yf
 import matplotlib.pyplot as plt
 
-def vasicek_model(r0, kappa, theta, sigma, T, dt, n_paths):
+def vasicek_model_func(r0, kappa, theta, sigma, T, dt, n_paths):
     rng = np.random.default_rng(seed=12)
 
     n_steps = int(T/dt)
