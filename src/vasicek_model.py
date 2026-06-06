@@ -1,6 +1,5 @@
 
 # Vasicek Model
-
 import pandas as pd
 import numpy as np
 from scipy.stats import norm
@@ -20,3 +19,4 @@ def vasicek_model_func(r0, kappa, theta, sigma, T, dt, n_paths):
         r[i+1,:] = r[i,:] + dr
 
     return r
+
